@@ -1,0 +1,38 @@
+.about{
+   background-color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    color:#444649;
+    text-decoration: underline;
+}
+
+.about h1{
+    font-family: 'Roboto', sans-serif;
+    color:#444649;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.about p{
+    color:#616161;
+    font-weight: 400;
+
+}
+
+@media screen and (max-width: 600px) {
+    .about p {
+        font-size: 2.1vw
+    }
+    .about h1{
+        font-size: 3.1vw;
+    }
+  }

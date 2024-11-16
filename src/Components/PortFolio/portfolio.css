@@ -1,0 +1,134 @@
+/* General portfolio styling */
+#portfolio {
+    background-color: white;
+    margin-bottom: -50px;
+  }
+  
+  .portfolio {
+    height: 100vh;
+    /* margin-top: 20px; */
+    background-color: white;
+  }
+  
+  .portfolio h1 {
+    font-family: "Roboto", sans-serif;
+    color: #444649;
+    font-weight: 600;
+    font-size: 1.5rem;
+    position: relative;
+  }
+  
+  .portfolio p {
+    text-align: center;
+    color: #616161;
+    font-weight: 400;
+    line-height: 1.6; /* Increased line-height for readability */
+    margin-bottom: 15px; /* Added spacing between paragraphs */
+  }
+  
+  /* Round image styling */
+  .round-image {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 125px;
+    background-size: cover;
+    display: block;
+    background-image: url(/public/IMG_0905.jpg);
+    margin-bottom: 30px;
+  }
+  
+  /* Skill bar container */
+  .skill-block {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Add spacing between skill name and bar */
+    margin-bottom: 20px; /* Add space between each skill */
+  }
+  
+  .skill-block .skill-name {
+    flex: 1; /* Take up equal space */
+    font-weight: bold;
+    font-size: 1rem;
+    color: #444649;
+    text-align: left; /* Align skill names to the left */
+  }
+  
+  .skill-block .container {
+    flex: 3; /* Make the skill bar container wider */
+  }
+  
+  /* Container for skill bars */
+  .container {
+    width: 100%; /* Full width */
+    background-color: #ddd; /* Grey background */
+  }
+  
+  /* Skill bar styling */
+  .skills {
+    text-align: right;
+    padding: 10px 0; /* Add vertical padding */
+    color: white;
+    font-size: 0.9rem; /* Adjust font size inside skill bars */
+    border-radius: 5px; /* Add rounded edges to bars */
+  }
+  
+  .html {
+    width: 80%;
+    background-color: #00a1a7;
+  }
+  
+  .css {
+    width: 80%;
+    background-color: #00a1a7;
+  }
+  
+  .js {
+    width: 75%;
+    background-color: #00a1a7;
+  }
+  
+  .react {
+    width: 80%;
+    background-color: #00a1a7;
+  }
+  
+  .node {
+    width: 95%;
+    background-color: #00a1a7;
+  }
+  
+  .dev{
+    width:85%;
+    background-color: #00a1a7;
+  }
+
+  .python {
+    width: 75%;
+    background-color: #00a1a7;
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 600px) {
+    .portfolio p {
+      font-size: 2.1vw;
+      line-height: 1.4; /* Maintain readability on small screens */
+    }
+  
+    .portfolio {
+      margin-bottom: -50%;
+    }
+  
+    .skill-block {
+      flex-direction: column; /* Stack skill names and bars vertically */
+      align-items: flex-start; /* Align elements to the left */
+    }
+  
+    .skill-block .container {
+      width: 100%; /* Full width for small screens */
+    }
+  }
+  

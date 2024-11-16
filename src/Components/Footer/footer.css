@@ -1,0 +1,21 @@
+.footer{
+    height:20vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    flex-direction: row;
+    background-color: #1b242f;
+
+}
+
+.footer-icon{
+    margin-top: 10vh;
+    padding: 5px;
+    
+}
+
+.footer-icon :hover{
+    
+    color: #00a1a7;
+}
