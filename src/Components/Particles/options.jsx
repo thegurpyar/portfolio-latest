@@ -1,70 +1,73 @@
 export const options = {
   fullScreen: {
     enable: true,
-    zIndex: -1, // Ensures particles are rendered behind other elements
+    zIndex: -1
   },
-  fpsLimit: 120, // Limit the frames per second
+  fpsLimit: 60, // Reduced for smoother animations
   particles: {
     number: {
-      value: 40, // Total number of particles
+      value: 40,
       density: {
         enable: true,
-        area: 800, // Particles per this area
-      },
+        value_area: 800
+      }
     },
     color: {
-      value: "#F900BF", // Particle color
+      value: 'rgb(249, 0, 191)',
       animation: {
         enable: true,
-        speed: 10,
-        sync: true, // All particles change color simultaneously
-      },
+        speed: 5, // Reduced for smoother transitions
+        sync: true
+      }
     },
     opacity: {
-      value: 0.5, // Particle transparency
+      value: 0.4 // Slightly decreased for subtle visuals
     },
     size: {
-      value: { min: 0.1, max: 2.5 }, // Random sizes for particles
+      value: {
+        min: 0.5, // Increased minimum size for better visibility
+        max: 2
+      }
     },
     links: {
       enable: true,
-      distance: 100, // Maximum distance for linking particles
-      color: "#ffffff",
+      distance: 100,
+      color: '#ffffff',
       opacity: 0.4,
-      width: 1,
+      width: 1
     },
     move: {
       enable: true,
-      speed: 6, // Speed of particle movement
-      direction: "none", // Moves in random directions
+      speed: 2, // Reduced for slower movement
+      direction: 'none',
       outModes: {
-        default: "out", // Particles move outside the canvas
-      },
-    },
+        default: 'out'
+      }
+    }
   },
   interactivity: {
     events: {
       onHover: {
         enable: true,
-        mode: "repulse", // Push particles away on hover
+        mode: 'repulse'
       },
       onClick: {
         enable: true,
-        mode: "push", // Add particles on click
+        mode: 'push'
       },
-      resize: true, // Adjust particles when the window is resized
+      resize: true
     },
     modes: {
       repulse: {
-        distance: 200, // Distance to repulse particles
+        distance: 200
       },
       push: {
-        quantity: 4, // Number of particles added on click
-      },
-    },
+        quantity: 4
+      }
+    }
   },
-  detectRetina: true, // Optimizes particles for high-DPI displays
+  detectRetina: true,
   background: {
-    color: "#3A3845", // Canvas background color
-  },
+    color: '#3A3845'
+  }
 };

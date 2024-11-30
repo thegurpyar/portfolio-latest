@@ -6,7 +6,6 @@ import About from "./Components/About/About"
 import PortFolio from "./Components/PortFolio/PortFolio"
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
-import Particle from "./Components/Particles/Particle";
 const App = ()=>{
   return (
     
@@ -19,7 +18,6 @@ const App = ()=>{
       <PortFolio/>
       <Contact/>
       <Footer/>
-      {/* <Particle/> */}
     </div>
 
   )

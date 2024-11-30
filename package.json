@@ -12,15 +12,14 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "@tsparticles/react": "^3.0.0",
-    "bootstrap": "^5.3.3",
     "react": "^18.3.1",
     "react-awesome-reveal": "^4.2.14",
     "react-bootstrap": "^2.10.5",
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
     "react-scroll": "^1.9.0",
-    "react-tsparticles": "^2.12.2",
-    "tsparticles": "^3.5.0",
+    "react-tsparticles": "^2.0.6",
+    "tsparticles": "^2.0.6",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -46,5 +45,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/thegurpyar/portfolio-latest.git",
+  "author": "thegurpyar <gurpyar2828@gmail.com>",
+  "license": "MIT"
 }
