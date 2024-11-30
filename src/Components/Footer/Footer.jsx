@@ -1,6 +1,7 @@
 import React from "react";
 import "./footer.css";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import CallIcon from "@mui/icons-material/Call";
 import TextSnippetIcon from '@mui/icons-material/TextSnippet';
 const Footer = () => {
@@ -19,6 +20,16 @@ const Footer = () => {
       >
         <CallIcon style={iconStyle} />
       </a>
+
+      <a
+        className="footer-icon"
+        href="https://wa.me/+918619443934"
+        aria-label="Chat"
+      >
+        <WhatsAppIcon style={iconStyle} />
+      </a>
+
+
       <a
         className="footer-icon"
         href="https://www.instagram.com/accounts/login/?next=/gurpyardandiwal/"

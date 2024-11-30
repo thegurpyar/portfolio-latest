@@ -3,14 +3,17 @@ import "./contact.css";
 import { Container } from "react-bootstrap";
 import emailjs from "@emailjs/browser";
 import { Bounce } from "react-awesome-reveal";
+import Loader from "../Loader/Loader"; // Import the Loader component
 
 const Contact = () => {
   const form = useRef();
   const [alertMessage, setAlertMessage] = useState("");
   const [showAlert, setShowAlert] = useState(false);
+  const [loading, setLoading] = useState(false); // State to track loading status
 
   const sendEmail = async (e) => {
     e.preventDefault();
+    setLoading(true); // Show loader
 
     try {
       const result = await emailjs.sendForm(
@@ -19,15 +22,17 @@ const Contact = () => {
         form.current,
         process.env.REACT_APP_EMAILJS_PUBLIC_KEY
       );
-      
-      setShowAlert(true);
+      if(result){
+        setShowAlert(true);
+      }
       setAlertMessage("Email sent successfully!");
     } catch (error) {
       console.error("Error sending email:", error.text);
       setAlertMessage("Failed to send email. Please try again.");
+    } finally {
+      setLoading(false); // Hide loader after email is sent
     }
 
-    
     e.target.reset();
   };
 
@@ -97,6 +102,8 @@ const Contact = () => {
           </div>
         </div>
       )}
+
+      {loading && <Loader />} {/* Display loader when sending email */}
     </div>
   );
 };

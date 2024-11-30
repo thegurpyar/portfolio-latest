@@ -1,38 +1,70 @@
-.about{
-   background-color: white;
-    height: 100vh;
+.about {
+    background-color: white;
+    min-height: 100vh; /* Changed to min-height for flexibility */
     display: flex;
     align-items: center;
-    align-content: center;
     flex-direction: column;
     justify-content: center;
-}
-
-.header{
+    padding: 20px; /* Added padding for smaller screens */
+  }
+  
+  .header {
     font-family: 'Bebas Neue', cursive;
     font-size: 3rem;
-    color:#444649;
+    color: #444649;
     text-decoration: underline;
-}
-
-.about h1{
+    margin-bottom: 20px; /* Added spacing below the header */
+  }
+  
+  .about h1 {
     font-family: 'Roboto', sans-serif;
-    color:#444649;
+    color: #444649;
     font-weight: 600;
     font-size: 2rem;
-}
-
-.about p{
-    color:#616161;
+    margin-top: 10px; /* Adjusted spacing for better readability */
+  }
+  
+  .about p {
+    color: #616161;
     font-weight: 400;
-
-}
-
-@media screen and (max-width: 600px) {
-    .about p {
-        font-size: 2.1vw
+    margin: 10px 0; /* Added vertical spacing for paragraphs */
+    text-align: center; /* Centered text for mobile and desktop views */
+  }
+  
+  /* Responsive Adjustments */
+  @media screen and (max-width: 768px) {
+    .about {
+      padding: 15px;
     }
-    .about h1{
-        font-size: 3.1vw;
+  
+    .header {
+      font-size: 2.5rem; /* Reduced header size */
+    }
+  
+    .about h1 {
+      font-size: 1.5rem; /* Scaled down for smaller devices */
+    }
+  
+    .about p {
+      font-size: 0.9rem; /* Adjusted font size for better readability */
     }
   }
+  
+  @media screen and (max-width: 480px) {
+    .about {
+      padding: 10px;
+    }
+  
+    .header {
+      font-size: 2rem;
+    }
+  
+    .about h1 {
+      font-size: 1.2rem;
+    }
+  
+    .about p {
+      font-size: 0.8rem;
+    }
+  }
+  
