@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import "./contact.css";
 import { Container } from "react-bootstrap";
 import emailjs from "@emailjs/browser";
@@ -6,25 +6,32 @@ import { Bounce } from "react-awesome-reveal";
 
 const Contact = () => {
   const form = useRef();
+  const [alertMessage, setAlertMessage] = useState("");
+  const [showAlert, setShowAlert] = useState(false);
 
   const sendEmail = async (e) => {
     e.preventDefault();
 
     try {
       const result = await emailjs.sendForm(
-        "service_a325vqw",
-        "template_5ut5czg",
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
         form.current,
-        "Tm-An3NfFB76_uKXx"
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
       );
-      console.log("Email sent successfully:", result.text);
+      
+      setShowAlert(true);
+      setAlertMessage("Email sent successfully!");
     } catch (error) {
       console.error("Error sending email:", error.text);
+      setAlertMessage("Failed to send email. Please try again.");
     }
 
-    // Reset the form fields
+    
     e.target.reset();
   };
+
+  const closeAlert = () => setShowAlert(false);
 
   return (
     <div id="contact">
@@ -79,6 +86,17 @@ const Contact = () => {
           </form>
         </div>
       </Container>
+
+      {showAlert && (
+        <div className="custom-alert">
+          <div className="alert-content">
+            <p>{alertMessage}</p>
+            <button onClick={closeAlert} className="btn btn-light">
+              Close
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

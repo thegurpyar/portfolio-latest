@@ -19,7 +19,7 @@ const App = ()=>{
       <PortFolio/>
       <Contact/>
       <Footer/>
-      <Particle/>
+      {/* <Particle/> */}
     </div>
 
   )
