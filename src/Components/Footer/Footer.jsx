@@ -41,7 +41,7 @@ const Footer = () => {
       </a>
       <a
         className="footer-icon"
-        href="https://docs.google.com/document/d/1hWGLod9xqlV44nvkMQsfK6kOi4XqpepE/edit?usp=sharing&ouid=102389274576037284742&rtpof=true&sd=true"
+        href="https://docs.google.com/document/d/1EiCo34VO1_zEIxLFrlz_rcVmtFHEikw5bTDt08aNdaI"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Visit StackOverflow Profile"
