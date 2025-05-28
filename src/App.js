@@ -12,8 +12,9 @@ const App = ()=>{
   return (
     
     <div>
-<NavigationBar/>
+
 <Home/>
+    <NavigationBar/>
 <About/>
 <PortFolio/>
 <Project />
