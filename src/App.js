@@ -12,16 +12,14 @@ const App = ()=>{
   return (
     
     <div>
-
-      
-      <Home/>
-      <NavigationBar/>
-      <About/>
-      <PortFolio/>
-      <Project />
-      <Service />
-      <Contact/>
-      <Footer/>
+<NavigationBar/>
+<Home/>
+<About/>
+<PortFolio/>
+<Project />
+<Service />
+<Contact/>
+<Footer/>
     </div>
 
   )
