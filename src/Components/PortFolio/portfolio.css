@@ -1,11 +1,13 @@
 /* General portfolio styling */
 #portfolio {
     background-color: white;
-    margin-bottom: -50px;
+    padding-left: 5%;
+    padding-right: 5%;
+    /* margin-bottom: -50px; */
   }
   
   .portfolio {
-    height: 100vh;
+    /* height: 100vh; */
     /* margin-top: 20px; */
     background-color: white;
   }
@@ -63,7 +65,7 @@
   
   /* Container for skill bars */
   .container {
-    width: 100%; /* Full width */
+    /* width: 100%; Full width */
     background-color: #ddd; /* Grey background */
   }
   
@@ -118,10 +120,7 @@
       line-height: 1.4; /* Maintain readability on small screens */
     }
   
-    .portfolio {
-      margin-bottom: -50%;
-    }
-  
+    
     .skill-block {
       flex-direction: column; /* Stack skill names and bars vertically */
       align-items: flex-start; /* Align elements to the left */

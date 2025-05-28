@@ -1,0 +1,90 @@
+.Background1 {
+  background: #fff;
+  padding-left: 5%;
+  padding-top: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+    margin-bottom: -50px;
+
+
+  
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  
+}
+.dash {
+  color: #00a1a7;
+  font-size: 2rem;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.btn {
+  background-color: #00a1a7;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.btn:hover {
+  background-color: #0c797c;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+.information {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  /* background: #000; */
+}
+
+.info {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 15px;
+  height: 250px;
+}
+
+.title {
+  color: #00a1a7;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.image1 {
+  margin-left: 20px;
+  height: 50px;
+  width: 50px;
+  background-position: cover;
+}
+
+.flex2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+ 
+}
+
+@media screen and (max-width: 600px) {
+  .flex {
+    flex-direction: column;
+  }
+
+  .information {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+    row-gap: 20px;
+  }
+}

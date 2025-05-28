@@ -23,7 +23,7 @@ const PortFolio = () => {
               </p>
               <p>
                 <a
-                  href="https://docs.google.com/document/d/1hWGLod9xqlV44nvkMQsfK6kOi4XqpepE/edit?usp=sharing&ouid=102389274576037284742&rtpof=true&sd=true"
+                  href="https://docs.google.com/document/d/1EiCo34VO1_zEIxLFrlz_rcVmtFHEikw5bTDt08aNdaI/edit?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{ color: "rgb(4, 194, 201)" }}

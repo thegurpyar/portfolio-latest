@@ -1,0 +1,95 @@
+.Background {
+  background: #fff;
+  padding-left: 5%;
+  padding-top: 5%;
+  padding-right: 5%;
+ 
+}
+
+/* Flex container */
+.flex {
+  display: flex;
+  max-width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-direction: row; /* side by side on desktop */
+  flex-wrap: wrap; /* allow wrapping on small screens */
+  padding-bottom: 10%;
+  
+}
+
+.image-container {
+  /* flex: 1 1 300px; flex-grow, shrink, basis */
+  max-width: 500px;
+  
+
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.HeadTag{
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.HeadTag h1{
+  font-weight: bold;
+  background: #00a1a7;
+  color: #fff   ;
+  padding: 10px;
+  border-radius: 10px;
+  
+  
+}
+
+.About_Project {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 2%;
+  min-width: 280px;
+  text-align: left;
+}
+
+.Head_Font {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.btn{
+   background-color:  #00a1a7;
+   color: white;
+   font-weight: bold;
+}
+
+.btn:hover{
+  background-color:  #0c797c;
+   color: rgb(255, 255, 255);
+   font-weight: bold;
+   
+
+}
+/* Responsive: Stack vertically on small screens */
+@media (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .About_Project {
+    padding: 1rem 0 0 0;
+  }
+  
+  .image-container {
+    max-width: 100%;
+  }
+}
