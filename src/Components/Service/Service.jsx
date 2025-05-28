@@ -7,7 +7,7 @@ import { Fade } from "react-awesome-reveal";
 import "./Service.css";
 
 function Service() {
-  const [expanded, setExpanded] = useState(false);
+  const [setExpanded] = useState(false);
   const card = [
         {
       id:4,
