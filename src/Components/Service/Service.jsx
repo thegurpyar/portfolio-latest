@@ -9,39 +9,41 @@ import "./Service.css";
 function Service() {
   const [setExpanded] = useState(false);
   const card = [
-        {
-      id:4,
-      image: "/backend.png",
-      Heading: "Scalable Back-End",
-      Para: "Efficient queries and caching, and use CI/CD pipelines for fast, reliable deployment and scalable backend."
-    },
     {
-      id: 2,
+      id: 1,
       image: "UIUX.png",
       Heading: "UI/UX Design",
       Para: "I have experience creating UI/UX designs and SEO-optimized web applications.",
     },
     {
-      id: 3,
+      id: 2,
       image: "/website-content.png",
       Heading: "Website design & Development",
       Para: "I have two years of industry experience in developing user-friendly web applications.",
     },
     {
-      id: 4,
+      id: 3,
       image: "/hired.png",
       Heading: "Hire Me",
       Para: "You can hire me to create your dream web application.",
     },
-
+    {
+      id:4,
+      image: "/CI_CD.webp",
+      Heading: "Scalable Back-End",
+      Para: "Efficient queries and caching, and use CI/CD pipelines for fast, reliable deployment and scalable backend."
+    }
   ];
   return (
     <div className="Background1">
       <div className="flex">
         <h2 className="flex2">
+          <h1>
+            <span className="dash">-</span>Service
+          </h1>
 
           <h1>
-            <span className="dash">Services</span> I Provide
+            <span className="dash">Service</span> I Provide
           </h1>
         </h2>
 
