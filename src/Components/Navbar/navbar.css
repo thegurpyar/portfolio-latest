@@ -4,11 +4,12 @@
     background-color: #1b242f;
     box-shadow: 0 3px 2px #30AADD;
     
-    
-    
 }
 
-
+.navbar-container {
+  height: 100vh;
+  position: relative;
+}
 
 
 
